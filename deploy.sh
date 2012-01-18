@@ -4,7 +4,7 @@ cat header.html content.html footer.html > index.html
 
 #generate basic.html
 perl Markdown_1.0.1/Markdown.pl basics.md > basic_content.html
-cat header.html basic_content.html footer.html >> basic.html
+cat header.html basic_content.html footer.html > basic.html
 
 #commit and push to Gitcafe project
 git add .
