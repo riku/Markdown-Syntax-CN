@@ -9,7 +9,7 @@
   [t]: http://twitter.com/riku
   [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 
-Markdown 语法 (简体中文版) / ([点击查看快速入门](./basic.html))
+Markdown 语法说明 (简体中文版) / ([点击查看快速入门](./basic.html))
 ================
 
 *   [概述](#overview)
@@ -54,9 +54,9 @@ Markdown 的目标是实现「易读易写」。
 
 <h3 id="html">行内 HTML</h3>
 
-Markdown 的语法有个主要的目的：用来作为一种网路内容的*写作*用语言。
+Markdown 语法的主要目标之一是：成为一种用于网络内容的*写作*语言。
 
-Markdown 不是要来取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点*不是*要创造一种更容易写作 HTML 文件的语法，我认为 HTML 已经很容易写了，Markdown 的重点在于，它能让文件更容易阅读、编写。HTML 是一种*发布*的格式，Markdown 是一种*编写*的格式，因此，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。
+Markdown 不是想要取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点*不是*要创造一种更容易写 HTML 文件的语法，我认为 HTML 已经很容易写了，Markdown 的重点而是在于，它希望能让文件更容易阅读、编写。HTML 是一种*发布*的格式，Markdown 是一种*编写*的格式，因此，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。
 
 不在 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
 
