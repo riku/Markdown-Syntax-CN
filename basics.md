@@ -1,4 +1,11 @@
-Markdown: Basics （快速入门）
+**声明：** 这份文档派生于[繁体中文版](http://markdown.tw/)，在此基础上进行了繁体转简体工作，并进行了适当的润色。此文档用 Markdown 语法编写，你可以到这里[查看它的源文件][src1]。「繁体中文版的原始文件可以[查看这里][src]」--By @[riku][t] / 本项目托管于 [GitCafe][g]
+
+[src1]:http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/basics.md
+[src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/basics.md
+[t]: http://twitter.com/riku
+[g]: http://gitcafe.com/riku/Markdown-Syntax-CN
+
+Markdown: Basics （快速入门） / ([完整语法说明](./index.html))
 ================
 
 Getting the Gist of Markdown's Formatting Syntax
@@ -6,15 +13,12 @@ Getting the Gist of Markdown's Formatting Syntax
 
 这页提供了 Markdown 简单的概念给想使用的人， [语法说明][s] 页提供了完整详细的文件，说明每项功能，但是 Markdown 其实很简单就可以上手，这页文件提供了一些范例，并且每个范例都会提供输出的 HTML 结果。
 
-其实直接试试看也是一个很不错的方法， [Dingus][d] 是一个网页应用程序，让你可以把你的 Markdown 文件转成 XHTML。
-
-**声明：** 这份文档派生于[繁体中文版](http://markdown.tw/)，在此基础上进行了繁体转简体工作，并进行了适当的润色。此文档用 Markdown 语法编写，你可以到这里[查看它的源文件](http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/basics.md)。
-
-**注意:** 繁体中文版的原始文件可以[查看这里][src]
-
 [s]: http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md "Markdown Syntax"
 [d]: http://daringfireball.net/projects/markdown/dingus "Markdown Dingus"
-[src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/basics.md
+
+其实直接试试看也是一个很不错的方法， [Dingus][d] 是一个网页应用程序，让你可以把你的 Markdown 文件转成 XHTML。
+
+
 
 ## 段落、标题、区块代码 ##
 
