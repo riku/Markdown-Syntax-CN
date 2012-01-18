@@ -7,4 +7,6 @@
   [src1]: http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
   [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
 
+项目页面：<http://wowubuntu.com/markdown>
+
 By @riku - [twitter.com/riku](http://twitter.com/riku)
