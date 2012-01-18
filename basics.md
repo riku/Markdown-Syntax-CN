@@ -222,7 +222,7 @@ title 属性是选择性的，链接名称可以用字母、数字和空格，�
 	<code>&amp;mdash;</code> instead of decimal-encoded
 	entites like <code>&amp;#8212;</code>.</p>
 
-如果要建立一个已经格式化好的代码区块，只要每行都缩排 4 个空格或是一个 tab 就可以了，而 `&`、`<` 和 `>` 也一样会自动转成 HTML 实体。
+如果要建立一个已经格式化好的代码区块，只要每行都缩进 4 个空格或是一个 tab 就可以了，而 `&`、`<` 和 `>` 也一样会自动转成 HTML 实体。
 
 Markdown 语法:
 
