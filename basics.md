@@ -5,7 +5,7 @@
 [t]: http://twitter.com/riku
 [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 
-Markdown: Basics （快速入门） / (点击查看[完整语法说明](./index.html))
+Markdown: Basics （快速入门） / ([点击查看完整语法说明](./index.html))
 ================
 
 Getting the Gist of Markdown's Formatting Syntax

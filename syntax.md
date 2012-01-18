@@ -9,7 +9,7 @@
   [t]: http://twitter.com/riku
   [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 
-Markdown 语法 (简体中文版) / (点击查看[快速入门](./basic.html))
+Markdown 语法 (简体中文版) / ([点击查看快速入门](./basic.html))
 ================
 
 *   [概述](#overview)
