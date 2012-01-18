@@ -22,7 +22,7 @@ Markdown 语法 (简体中文版)
     *   [代码](#code)
     *   [图片](#img)
 *   [其它](#misc)
-    *   [跳脱字元](#backslash)
+    *   [反斜杠](#backslash)
     *   [自动链接](#autolink)
 *   [感谢](#acknowledgement)
 
@@ -40,7 +40,7 @@ Markdown 语法 (简体中文版)
 
 Markdown 的目标是实现「易读易写」。
 
-不过最需要强调的便是它的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大灵感来源其实是纯文字的电子邮件格式。
+不过最需要强调的便是它的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大灵感来源其实是纯文本的电子邮件格式。
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
   [2]: http://www.aaronsw.com/2002/atx/
@@ -49,17 +49,17 @@ Markdown 的目标是实现「易读易写」。
   [5]: http://www.triptico.com/software/grutatxt.html
   [6]: http://ettext.taint.org/doc/
 
-因此 Markdown 的语法全由标点符号所组成，并经过严谨慎选，是为了让它们看起来就像所要表达的意思。像是在文字两旁加上星号，看起来就像\*强调\*。Markdown 的清单看起来，嗯，就是清单。假如你有使用过电子邮件，区块引言看起来就真的像是引用一段文字。
+因此 Markdown 的语法全由标点符号所组成，并经过严谨慎选，是为了让它们看起来就像所要表达的意思。像是在文字两旁加上星号，看起来就像\*强调\*。Markdown 的列表看起来，嗯，就是列表。假如你有使用过电子邮件，区块引用看起来就真的像是引用一段文字。
 
 <h3 id="html">行内 HTML</h3>
 
 Markdown 的语法有个主要的目的：用来作为一种网路内容的*写作*用语言。
 
-Markdown 不是要来取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点*不是*要创造一种更容易写作 HTML 文件的语法，我认为 HTML 已经很容易写了，Markdown 的重点在于，它能让文件更容易阅读、编写。HTML 是一种*发布*的格式，Markdown 是一种*编写*的格式，因此，Markdown 的格式语法只涵盖纯文字可以涵盖的范围。
+Markdown 不是要来取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点*不是*要创造一种更容易写作 HTML 文件的语法，我认为 HTML 已经很容易写了，Markdown 的重点在于，它能让文件更容易阅读、编写。HTML 是一种*发布*的格式，Markdown 是一种*编写*的格式，因此，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。
 
 不在 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
 
-只有区块元素――比如 `<div>`、`<table>`、`<pre>`、`<p>` 等标签，必需在前后加上空白，以利与内容区隔。而且这些（元素）的开始与结尾标签，不可以用 tab 或是空白来缩排。Markdown 的产生器有智慧型判断，可以避免在区块标签前后加上没有必要的 `<p>` 标签。
+只有区块元素――比如 `<div>`、`<table>`、`<pre>`、`<p>` 等标签，必需在前后加上空白，以利与内容区隔。而且这些（元素）的开始与结尾标签，不可以用 tab 或是空白来缩排。Markdown 的生成器有智能型判断功能，可以避免在区块标签前后加上没有必要的 `<p>` 标签。
 
 举例来说，在 Markdown 文件里加上一段 HTML 表格：
 
@@ -75,15 +75,15 @@ Markdown 不是要来取代 HTML，甚至也没有要和它相似，它的语法
 
 请注意，Markdown 语法在 HTML 区块标签中将不会被进行处理。例如，你无法在 HTML 区块内使用 Markdown 形式的`*强调*`。
 
-HTML 的区段标签如 `<span>`、`<cite>`、`<del>` 则不受限制，可以在 Markdown 的段落、清单或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的  `<a>` 或 `<img>` 标签，可以直接使用这些标签，而不用 Markdown 提供的连结或是影像标示语法。
+HTML 的区段标签如 `<span>`、`<cite>`、`<del>` 则不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的  `<a>` 或 `<img>` 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。
 
 HTML 区段标签和区块标签不同，在区段标签的范围内， Markdown 的语法是有效的。
 
 <h3 id="autoescape">特殊字元自动转换</h3>
 
-在 HTML 文件中，有两个字元需要特殊处理： `<` 和 `&` 。 `<` 符号用于起始标签，`&` 符号则用于标记 HTML 实体，如果你只是想要使用这些符号，你必须要使用实体的形式，像是 `&lt;` 和 `&amp;`。
+在 HTML 文件中，有两个字符需要特殊处理： `<` 和 `&` 。 `<` 符号用于起始标签，`&` 符号则用于标记 HTML 实体，如果你只是想要使用这些符号，你必须要使用实体的形式，像是 `&lt;` 和 `&amp;`。
 
-`&` 符号其实很让写作网路文件的人感到困扰，如果你要打「AT&T」 ，你必须要写成「`AT&amp;T`」 ，还得转换网址内的 `&` 符号，如果你要连结到：
+`&` 符号其实很让写作网络文档的人感到困扰，如果你要打「AT&T」 ，你必须要写成「`AT&amp;T`」 ，还得转换网址内的 `&` 符号，如果你要链接到：
 
     http://images.google.com/images?num=30&q=larry+bird
 
@@ -91,9 +91,9 @@ HTML 区段标签和区块标签不同，在区段标签的范围内， Markdown
 
     http://images.google.com/images?num=30&amp;q=larry+bird
 
-才能放到连结标签的 `href` 属性里。不用说也知道这很容易忘记，这也可能是 HTML 标准检查所检查到的错误中，数量最多的。
+才能放到链接标签的 `href` 属性里。不用说也知道这很容易忘记，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。
 
-Markdown 允许你直接使用这些符号，但是你要小心跳脱字元的使用，如果你是在HTML 实体中使用 `&` 符号的话，它不会被转换，而在其它情形下，它则会被转换成 `&amp;`。所以你如果要在文件中插入一个着作权的符号，你可以这样写：
+Markdown 允许你直接使用这些符号，但是你要配合反斜杠的使用，如果你是在 HTML 文件中使用 `&` 符号的话，它不会被转换，而在其它情形下，它则会被转换成 `&amp;`。所以你如果要在文档中插入一个著作权的符号，你可以这样写：
 
     &copy;
 
@@ -126,9 +126,9 @@ Markdown 将会把它转换为：
 
 「一个以上相连接的行句组成」这句话其实暗示了 Markdown 允许段落内的强迫断行，这个特性和其他大部分的 text-to-HTML 格式不一样（包括 MovableType 的「Convert Line Breaks」选项），其它的格式会把每个断行都转成 `<br />` 标签。
 
-如果你*真的*想要插入 `<br />` 标签的话，在行尾加上两个以上的空白，然后按 enter。
+如果你*真的*想要插入 `<br />` 标签的话，在行尾加上两个以上的空白，然后按回车。
 
-是的，这确实需要花比较多功夫来插入 `<br />` ，但是「每个换行都转换为 `<br />`」的方法在 Markdown 中并不适合， Markdown 中 email 式的 [区块引言][bq] 和多段落的 [清单][l] 在使用换行来排版的时候，不但更好用，还更好阅读。
+是的，这确实需要花比较多功夫来插入 `<br />` ，但是「每个换行都转换为 `<br />`」的方法在 Markdown 中并不适合， Markdown 中 email 式的 [区块引用][bq] 和多段落的 [列表][l] 在使用换行来排版的时候，不但更好用，还更方便阅读。
 
   [bq]: #blockquote
   [l]:  #list
@@ -166,7 +166,7 @@ Atx 形式则是在行首插入 1 到 6 个 `#` ，对应到标题 1 到 6 阶�
 
 <h3 id="blockquote">Blockquotes</h3>
 
-Markdown 使用 email 形式的区块引言，如果你很熟悉如何在 email 信件中引言，你就知道怎么在 Markdown 文件中建立一个区块引言，那会看起来像是你强迫断行，然后在每行的最前面加上 `>` ：
+Markdown 使用 email 形式的区块引用，如果你很熟悉如何在 email 信件中引言，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你强迫断行，然后在每行的最前面加上 `>` ：
 
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -313,7 +313,7 @@ Markdown 支援有序清单和无序清单。
 
     2.  Suspendisse id sem consectetuer libero luctus adipiscing.
 
-如果你每行都有缩排，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown 也允许：
+如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown 也允许：
 
     *   This is a list item with two paragraphs.
 
@@ -323,7 +323,7 @@ Markdown 支援有序清单和无序清单。
 
     *   Another item in the same list.
 
-如果要在清单项目内放进引言，那 `>` 就需要缩排：
+如果要在列表项目内放进引用，那 `>` 就需要缩排：
 
     *   A list item with a blockquote:
 
