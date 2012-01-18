@@ -51,11 +51,11 @@
 
 <p>Markdown 语法的主要目标之一是：成为一种用于网络内容的<em>写作</em>语言。</p>
 
-<p>Markdown 不是想要取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点<em>不是</em>要创造一种更容易写 HTML 文件的语法，我认为 HTML 已经很容易写了，Markdown 的重点而是在于，它希望能让文件更容易阅读、编写。HTML 是一种<em>发布</em>的格式，Markdown 是一种<em>编写</em>的格式，因此，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
+<p>Markdown 不是想要取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点<em>不是</em>要创造一种更容易写 HTML 文档的语法，我认为 HTML 已经很容易写了，Markdown 的重点而是在于，它希望能让文档更容易阅读、编写。HTML 是一种<em>发布</em>的格式，Markdown 是一种<em>编写</em>的格式，因此，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
 
-<p>不在 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
+<p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
 
-<p>只有区块元素――比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等标签，必需在前后加上空白，以利与内容区隔。而且这些（元素）的开始与结尾标签，不可以用 tab 或是空白来缩排。Markdown 的生成器有智能型判断功能，可以避免在区块标签前后加上没有必要的 <code>&lt;p&gt;</code> 标签。</p>
+<p>只有区块元素――比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等标签，必需在前后加上空白，以利与内容区隔。而且这些（元素）的开始与结尾标签，不可以用 tab 或是空白来缩进。Markdown 的生成器有智能判断功能，可以避免在区块标签前后加上不必要的 <code>&lt;p&gt;</code> 标签。</p>
 
 <p>举例来说，在 Markdown 文件里加上一段 HTML 表格：</p>
 
@@ -70,17 +70,17 @@
 This is another regular paragraph.
 </code></pre>
 
-<p>请注意，Markdown 语法在 HTML 区块标签中将不会被进行处理。例如，你无法在 HTML 区块内使用 Markdown 形式的<code>*强调*</code>。</p>
+<p>请注意，Markdown 语法在 HTML 区块标签中将不会被处理。例如，你无法在 HTML 区块内使用 Markdown 形式的<code>*强调*</code>。</p>
 
-<p>HTML 的区段标签如 <code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code> 则不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的  <code>&lt;a&gt;</code> 或 <code>&lt;img&gt;</code> 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。</p>
+<p>HTML 的区段标签如 <code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code> 则不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的  <code>&lt;a&gt;</code> 或 <code>&lt;img&gt;</code> 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。</p>
 
 <p>HTML 区段标签和区块标签不同，在区段标签的范围内， Markdown 的语法是有效的。</p>
 
-<h3 id="autoescape">特殊字元自动转换</h3>
+<h3 id="autoescape">特殊字符自动转换</h3>
 
 <p>在 HTML 文件中，有两个字符需要特殊处理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符号用于起始标签，<code>&amp;</code> 符号则用于标记 HTML 实体，如果你只是想要使用这些符号，你必须要使用实体的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
 
-<p><code>&amp;</code> 符号其实很让写作网络文档的人感到困扰，如果你要打「AT&amp;T」 ，你必须要写成「<code>AT&amp;amp;T</code>」 ，还得转换网址内的 <code>&amp;</code> 符号，如果你要链接到：</p>
+<p><code>&amp;</code> 符号其实非常让书写网络文档的人感到困扰，如果你要打「AT&amp;T」 ，你必须要写成「<code>AT&amp;amp;T</code>」 ，还得转换网址内的 <code>&amp;</code> 符号，如果你要链接到：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
@@ -125,9 +125,9 @@ This is another regular paragraph.
 
 <h3 id="p">段落和换行</h3>
 
-<p>一个段落是由一个以上相连接的行句组成，而一个以上的空行则会切分出不同的段落（空行的定义是显示上看起来像是空行，便会被视为空行。比方说，若某一行只包含空白和 tab，则该行也会被视为空行），一般的段落不需要用空白或断行缩排。</p>
+<p>一个段落是由一个以上相连接的句子组成，而一个以上的空行则会划分出不同的段落（空行的定义是显示上看起来像是空行，便会被视为空行。比方说，若某一行只包含空白和 tab，则该行也会被视为空行），一般的段落不需要用空白或换行缩进。</p>
 
-<p>「一个以上相连接的行句组成」这句话其实暗示了 Markdown 允许段落内的强迫断行，这个特性和其他大部分的 text-to-HTML 格式不一样（包括 MovableType 的「Convert Line Breaks」选项），其它的格式会把每个断行都转成 <code>&lt;br /&gt;</code> 标签。</p>
+<p>「一个以上相连接的句子组成」这句话其实暗示了 Markdown 允许段落内的强迫换行，这个特性和其他大部分的 text-to-HTML 格式不一样（包括 MovableType 的「Convert Line Breaks」选项），其它的格式会把每个断行都转成 <code>&lt;br /&gt;</code> 标签。</p>
 
 <p>如果你<em>真的</em>想要插入 <code>&lt;br /&gt;</code> 标签的话，在行尾加上两个以上的空白，然后按回车。</p>
 
@@ -135,7 +135,7 @@ This is another regular paragraph.
 
 <h3 id="header">标题</h3>
 
-<p>Markdown 支援两种标题的语法，<a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a> 和 <a href="http://www.aaronsw.com/2002/atx/">atx</a> 形式。</p>
+<p>Markdown 支持两种标题的语法，<a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a> 和 <a href="http://www.aaronsw.com/2002/atx/">atx</a> 形式。</p>
 
 <p>Setext 形式是用底线的形式，利用 <code>=</code> （最高阶标题）和 <code>-</code> （第二阶标题），例如：</p>
 
@@ -166,7 +166,7 @@ This is an H2
 ### This is an H3 ######
 </code></pre>
 
-<h3 id="blockquote">Blockquotes</h3>
+<h3 id="blockquote">区块引用 Blockquotes</h3>
 
 <p>Markdown 使用 email 形式的区块引用，如果你很熟悉如何在 email 信件中引言，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你强迫换行，然后在每行的最前面加上 <code>&gt;</code> ：</p>
 
@@ -197,7 +197,7 @@ id sem consectetuer libero luctus adipiscing.
 &gt; Back to the first level.
 </code></pre>
 
-<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码码区块等：</p>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
 
 <pre><code>&gt; ## This is a header.
 &gt; 
@@ -209,7 +209,7 @@ id sem consectetuer libero luctus adipiscing.
 &gt;     return shell_exec("echo $input | $markdown_script");
 </code></pre>
 
-<p>任何标准的文字编辑器都能简单地建立 email 样式的引言，例如 BBEdit ，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p>
+<p>任何标准的文字编辑器都能简单地建立 email 样式的引用，例如 BBEdit ，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p>
 
 <h3 id="list">列表</h3>
 
@@ -243,7 +243,7 @@ id sem consectetuer libero luctus adipiscing.
 3.  Parish
 </code></pre>
 
-<p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的清单所产生的 HTML 标记为：</p>
+<p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：</p>
 
 <pre><code>&lt;ol&gt;
 &lt;li&gt;Bird&lt;/li&gt;
@@ -252,7 +252,7 @@ id sem consectetuer libero luctus adipiscing.
 &lt;/ol&gt;
 </code></pre>
 
-<p>如果你的清单标记写成：</p>
+<p>如果你的列表标记写成：</p>
 
 <pre><code>1.  Bird
 1.  McHale
@@ -364,7 +364,7 @@ sit amet, consectetuer adipiscing elit.
 <pre><code>1986. What a great season.
 </code></pre>
 
-<p>换句话说，也就是在行首出现<em>数字-句点-空白</em>，要避免这样的状况，你可以在句点前面加上反斜线。</p>
+<p>换句话说，也就是在行首出现<em>数字-句点-空白</em>，要避免这样的状况，你可以在句点前面加上反斜杠。</p>
 
 <pre><code>1986\. What a great season.
 </code></pre>
