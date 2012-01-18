@@ -9,4 +9,5 @@ cat header.html basic_content.html footer.html > basic.html
 #commit and push to Gitcafe project
 git add .
 git commit -m "update and deploy to http://wowubuntu.com/markdown"
-git push
+git push origin
+git push github
