@@ -7,12 +7,12 @@
   [src1]: http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
   [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
 
-###链接
+### 链接
 
 项目主页：<http://wowubuntu.com/markdown>
 
 繁体中文版主页：<http://markdown.tw/>
 
-###附注
+### 附注
 
 By @riku - [twitter.com/riku](http://twitter.com/riku)
