@@ -25,7 +25,10 @@ Getting the Gist of Markdown's Formatting Syntax
 
 一个段落是由一个以上的连接的行句组成，而一个以上的空行则会划分出不同的段落（空行的定义是显示上看起来像是空行，就被视为空行，例如有一行只有空白和 tab，那该行也会被视为空行），一般的段落不需要用空白或换行缩进。
 
-Markdown 支持两种标题的语法，[Setext][1] 和 [atx][2] 形式。Setext 形式是用底线的形式，利用 `=` （最高阶标题）和 `-` （第二阶标题），Atx 形式在行首插入 1 到 6 个 `#` ，对应到标题 1 到 6 阶。
+Markdown 支持两种标题的语法，[Setext] [1] 和 [atx] [2] 形式。Setext 形式是用底线的形式，利用 `=` （最高阶标题）和 `-` （第二阶标题），Atx 形式在行首插入 1 到 6 个 `#` ，对应到标题 1 到 6 阶。
+
+[1]: http://docutils.sourceforge.net/mirror/setext.html
+[2]: http://www.aaronsw.com/2002/atx/
 
 区块引用则使用 email 形式的 '`>`' 角括号。
 
