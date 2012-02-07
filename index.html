@@ -21,7 +21,7 @@
 <li><a href="#overview">概述</a>
 <ul>
 <li><a href="#philosophy">宗旨</a></li>
-<li><a href="#html">行内 HTML</a></li>
+<li><a href="#html">兼容 HTML</a></li>
 <li><a href="#autoescape">特殊字符自动转换</a></li>
 </ul></li>
 <li><a href="#block">区块元素</a>
@@ -60,7 +60,7 @@
 
 <p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像*强调*。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。</p>
 
-<h3 id="html">行内 HTML</h3>
+<h3 id="html">兼容 HTML</h3>
 
 <p>Markdown 语法的目标是：成为一种适用于网络的<em>书写</em>语言。</p>
 
@@ -93,7 +93,7 @@
 
 <p>在 HTML 文件中，有两个字符需要特殊处理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符号用于起始标签，<code>&amp;</code> 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
 
-<p><code>&amp;</code> 字符尤其让网络文档编写者受折磨，如果你要打「AT&amp;T」 ，你必须要写成「<code>AT&amp;amp;T</code>」。而网址中的 <code>&amp;</code> 字符也要转换。比如你要链接到：</p>
+<p><code>&amp;</code> 字符尤其让网络文档编写者受折磨，如果你要打「<code>AT&amp;T</code>」 ，你必须要写成「<code>AT&amp;amp;T</code>」。而网址中的 <code>&amp;</code> 字符也要转换。比如你要链接到：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
@@ -107,7 +107,7 @@
 
 <p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 <code>&amp;</code> 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 <code>&amp;amp</code>;。</p>
 
-<p>所以你如果要在文档中插入一个著作权的符号，你可以这样写：</p>
+<p>所以你如果要在文档中插入一个著作权的符号 <code>©</code>，你可以这样写：</p>
 
 <pre><code>&amp;copy;
 </code></pre>
@@ -122,7 +122,7 @@
 <pre><code>AT&amp;amp;T
 </code></pre>
 
-<p>类似的状况也会发生在 <code>&lt;</code> 符号上，因为 Markdown 支持 <a href="#html">行内 HTML</a> ，如果你是使用 <code>&lt;</code> 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：</p>
+<p>类似的状况也会发生在 <code>&lt;</code> 符号上，因为 Markdown 允许 <a href="#html">兼容 HTML</a> ，如果你是把 <code>&lt;</code> 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：</p>
 
 <pre><code>4 &lt; 5
 </code></pre>
@@ -140,7 +140,7 @@
 
 <h3 id="p">段落和换行</h3>
 
-<p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空行，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
+<p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
 
 <p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <code>&lt;br /&gt;</code> 标签。</p>
 
@@ -172,7 +172,7 @@ This is an H2
 ###### 这是 H6
 </code></pre>
 
-<p>你可以选择性地「关闭」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：</p>
+<p>你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：</p>
 
 <pre><code># 这是 H1 #
 
@@ -285,7 +285,7 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。</p>
 
-<p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多三个空格，项目标记后面则一定要接着至少一个空格或制表符。</p>
+<p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</p>
 
 <p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p>
 
@@ -335,7 +335,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 &lt;/ul&gt;
 </code></pre>
 
-<p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是一个制表符：</p>
+<p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</p>
 
 <pre><code>1.  This is a list item with two paragraphs. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. Aliquam hendrerit
@@ -367,7 +367,7 @@ sit amet, consectetuer adipiscing elit.
     &gt; inside a list item.
 </code></pre>
 
-<p>如果要放代码区块的话，该区块就需要缩进<em>两次</em>，也就是 8 个空格或是两个制表符：</p>
+<p>如果要放代码区块的话，该区块就需要缩进<em>两次</em>，也就是 8 个空格或是 2 个制表符：</p>
 
 <pre><code>*   一列表项包含一个列表区块：
 
@@ -388,7 +388,7 @@ sit amet, consectetuer adipiscing elit.
 
 <p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 标签来把代码区块包起来。</p>
 
-<p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空白或是 1 个 tab 就可以，例如，下面的输入：</p>
+<p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：</p>
 
 <pre><code>这是一个普通段落：
 
@@ -443,7 +443,7 @@ end tell
 
 <h3 id="hr">分隔线</h3>
 
-<p>你可以在一行中用三个或以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
 
 <pre><code>* * *
 
@@ -462,11 +462,11 @@ end tell
 
 <h3 id="link">链接</h3>
 
-<p>Markdown 支援两种形式的链接语法： <em>行内</em>和<em>参考</em>两种形式。</p>
+<p>Markdown 支持两种形式的链接语法： <em>行内式</em>和<em>参考式</em>两种形式。</p>
 
-<p>不管是哪一种，链接的文字都是用 [方括号] 来标记。</p>
+<p>不管是哪一种，链接文字都是用 [方括号] 来标记。</p>
 
-<p>要建立一个行内形式的链接，只要在方块括号后面马上接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p>
+<p>要建立一个<em>行内式</em>的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p>
 
 <pre><code>This is [an example](http://example.com/ "Title") inline link.
 
@@ -487,7 +487,7 @@ title attribute.&lt;/p&gt;
 <pre><code>See my [About](/about/) page for details.
 </code></pre>
 
-<p>参考形式的链接使用另外一个方括号接在链接文字的括号后面，而在第二个方括号里面要填入用以辨识链接的标签：</p>
+<p><em>参考式</em>的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p>
 
 <pre><code>This is [an example][id] reference-style link.
 </code></pre>
@@ -497,12 +497,12 @@ title attribute.&lt;/p&gt;
 <pre><code>This is [an example] [id] reference-style link.
 </code></pre>
 
-<p>接着，在文件的任意处，你可以把这个标签的链接内容定义出来：</p>
+<p>接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</p>
 
 <pre><code>[id]: http://example.com/  "Optional Title Here"
 </code></pre>
 
-<p>链接定义的形式为：</p>
+<p>链接内容定义的形式为：</p>
 
 <ul>
 <li>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</li>
@@ -526,7 +526,7 @@ title attribute.&lt;/p&gt;
 <pre><code>[id]: &lt;http://example.com/&gt;  "Optional Title Here"
 </code></pre>
 
-<p>你也可以把 title 属性放到下一行，也可以加一些缩进，网址太长的话，这样会比较好看：</p>
+<p>你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：</p>
 
 <pre><code>[id]: http://example.com/longish/path/to/resource/here
     "Optional Title Here"
@@ -540,7 +540,7 @@ title attribute.&lt;/p&gt;
 [link text][A]
 </code></pre>
 
-<p><em>隐式链接标签</em>功能让你可以省略指定链接标签，这种情形下，链接标签和链接文字会视为相同，要用隐式链接标签只要在链接文字后面加上一个空的方括号，如果你要让 "Google" 链接到 google.com，你可以简化成：</p>
+<p><em>隐式链接标记</em>功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 "Google" 链接到 google.com，你可以简化成：</p>
 
 <pre><code>[Google][]
 </code></pre>
@@ -550,7 +550,7 @@ title attribute.&lt;/p&gt;
 <pre><code>[Google]: http://google.com/
 </code></pre>
 
-<p>由于链接文字可能包含空白，所以这种简化的标签内也可以包含多个文字：</p>
+<p>由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：</p>
 
 <pre><code>Visit [Daring Fireball][] for more information.
 </code></pre>
@@ -590,16 +590,16 @@ title="Google"&gt;Google&lt;/a&gt; than from
 or &lt;a href="http://search.msn.com/" title="MSN Search"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
 </code></pre>
 
-<p>下面是用行内形式写的同样一段内容的 Markdown 文件，提供作为比较之用：</p>
+<p>下面是用行内式写的同样一段内容的 Markdown 文件，提供作为比较之用：</p>
 
 <pre><code>I get 10 times more traffic from [Google](http://google.com/ "Google")
 than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
 [MSN](http://search.msn.com/ "MSN Search").
 </code></pre>
 
-<p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的链接却会增加到 176 个字元，如果是用纯 HTML 格式来写，会有 234 个字元，在 HTML 格式中，标签比文字还要多。</p>
+<p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的却会增加到 176 个字元，如果是用纯 HTML 格式来写，会有 234 个字元，在 HTML 格式中，标签比文本还要多。</p>
 
-<p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的资讯移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。</p>
+<p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。</p>
 
 <h3 id="em">强调</h3>
 
@@ -632,7 +632,7 @@ __double underscores__
 <pre><code>un*frigging*believable
 </code></pre>
 
-<p>但是如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号。</p>
+<p>但是<strong>如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号</strong>。</p>
 
 <p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：</p>
 
@@ -675,7 +675,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 &lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 
-<p>在代码区段内，<code>&amp;</code> 和方括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：</p>
+<p>在代码区段内，<code>&amp;</code> 和方括号<strong>都</strong>会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：</p>
 
 <pre><code>Please don't use any `&lt;blink&gt;` tags.
 </code></pre>
@@ -700,9 +700,9 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。</p>
 
-<p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <em>行内</em>和<em>参考</em>。</p>
+<p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <em>行内式</em>和<em>参考式</em>。</p>
 
-<p>行内图片的语法看起来像是：</p>
+<p>行内式的图片语法看起来像是：</p>
 
 <pre><code>![Alt text](/path/to/img.jpg)
 
@@ -736,7 +736,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <h3 id="autolink">自动链接</h3>
 
-<p>Markdown 支援比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成连结，连结的文字就和连结位置一样，例如：</p>
+<p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
 
 <pre><code>&lt;http://example.com/&gt;
 </code></pre>
@@ -746,7 +746,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 <pre><code>&lt;a href="http://example.com/"&gt;http://example.com/&lt;/a&gt;
 </code></pre>
 
-<p>自动的邮件链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的信箱地址收集机器人，例如：</p>
+<p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：</p>
 
 <pre><code>&lt;address@example.com&gt;
 </code></pre>
@@ -759,9 +759,9 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 &amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
 </code></pre>
 
-<p>在浏览器里面，这段字串会变成一个可以点击的「address@example.com」链接。</p>
+<p>在浏览器里面，这段字串（其实是 <code>&lt;a href="mailto:address@example.com"&gt;address@example.com&lt;/a&gt;</code>）会变成一个可以点击的「address@example.com」链接。</p>
 
-<p>（这种作法虽然可以混淆不少的机器人，但并无法全部挡下来，不过这样也比什么都不做好些。无论如何，公开你的信箱终究会引来广告信件的。）</p>
+<p>（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）</p>
 
 <h3 id="backslash">反斜杠</h3>
 
@@ -776,9 +776,9 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 `   反引号
 *   星号
 _   底线
-{}  大括号
+{}  花括号
 []  方括号
-()  括号
+()  括弧
 #   井字号
 +   加号
 -   减号
