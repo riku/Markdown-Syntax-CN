@@ -714,3 +714,8 @@ Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的�
 [ethantw]:https://twitter.com/#!/ethantw
 [汉字标准格式・CSS Reset]:http://ethantw.net/projects/han/
 [WM]:http://kidwm.net/
+
+感谢 [fenprace][]，[addv][]。
+
+[fenprace]:https://github.com/fenprace
+[addv]:https://github.com/addv
