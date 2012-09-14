@@ -35,6 +35,7 @@ Markdown 语法说明 (简体中文版) / ([点击查看快速入门](./basic.ht
     *   [反斜杠](#backslash)
     *   [自动链接](#autolink)
 *   [感谢](#acknowledgement)
+*	[Markdown 免费编辑器](#editor)
 
 * * *
 
@@ -719,3 +720,19 @@ Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的�
 
 [fenprace]:https://github.com/fenprace
 [addv]:https://github.com/addv
+
+----------
+<h2 id="editor">Markdown 免费编辑器</h2>
+
+Windows 平台
+
+* [MarkdownPad](http://markdownpad.com/)
+* [MarkPad](http://code52.org/DownmarkerWPF/)
+
+Linux 平台
+
+* [ReText](http://sourceforge.net/p/retext/home/ReText/)
+
+Mac 平台
+
+* [Mou](http://mouapp.com/)
