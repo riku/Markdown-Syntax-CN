@@ -24,3 +24,7 @@
 ### 附注
 
 By @riku - [twitter.com/riku](http://twitter.com/riku)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/riku/markdown-syntax-cn/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
