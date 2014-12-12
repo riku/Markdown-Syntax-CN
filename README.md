@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/riku/markdown-syntax-cn.png?label=ready&title=Ready)](https://waffle.io/riku/markdown-syntax-cn)
 ### \###[点击查看《Markdown 语法》](http://wowubuntu.com/markdown/)
 
 ---
