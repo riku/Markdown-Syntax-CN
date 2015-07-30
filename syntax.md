@@ -477,7 +477,7 @@ Markdown 支持两种形式的链接语法： *行内式*和*参考式*两种形
 
 **请注意：**有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。
 
-链接网址也可以用方括号包起来：
+链接网址也可以用尖括号包起来：
 
     [id]: <http://example.com/>  "Optional Title Here"
 
