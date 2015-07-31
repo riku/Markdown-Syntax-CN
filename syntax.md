@@ -610,7 +610,7 @@ Markdown 使用星号（`*`）和底线（`_`）作为标记强调字词的符�
 	
 	<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
 
-在代码区段内，`&` 和方括号**都**会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：
+在代码区段内，`&` 和尖括号**都**会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：
 
     Please don't use any `<blink>` tags.
 
