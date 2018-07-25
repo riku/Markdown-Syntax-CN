@@ -21,7 +21,7 @@
 
 ### 链接
 
-项目主页：<http://wowubuntu.com/markdown>
+项目主页：<http://wow.kuapp.com/markdown/>
 
 繁体中文版主页：<http://markdown.tw/>
 
