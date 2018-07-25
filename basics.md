@@ -2,13 +2,14 @@
 
 **声明：** 这份文档派生(fork)于[繁体中文版](http://markdown.tw/)，在此基础上进行了繁体转简体工作，并进行了适当的润色。此文档用 Markdown 语法编写，你可以到这里[查看它的源文件][src1]。「繁体中文版的原始文件可以[查看这里][src]」--By @[riku][t]
 
-**注：** 本项目托管于 [GitCafe][]上，请通过"派生"和"合并请求"来帮忙改进本项目。
+**注：** 本项目托管于 [GitHub][]上，请通过"派生"和"合并请求"来帮忙改进本项目。
 
 [src1]:http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/basics.md
 [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/basics.md
 [t]: http://twitter.com/riku
 [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 [GitCafe]: http://gitcafe.com/riku/Markdown-Syntax-CN/
+[GitHub]: https://github.com/riku/Markdown-Syntax-CN
 
 Markdown: Basics （快速入门） / ([点击查看完整语法说明](./index.html))
 ================
