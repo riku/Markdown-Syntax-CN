@@ -9,8 +9,6 @@
 
 **注：** 本项目托管于 [GitHub][]，请通过"派生"和"合并请求"来帮忙改进本项目。对 Markdown 语法内容的改善只需要修改 syntax.md 及 basics.md 这两个文件。
 
-*** AD: 本网站托管于具备 SSD 硬盘的 [DigitalOcean.com VPS][] 服务商，[点击此处][DigitalOcean.com VPS]进入购买，即可免费获赠 10USD 优惠款！
-
 **注意：**繁体中文版的原始文件可以[查看这里][src] 。
 
   [src1]: http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
