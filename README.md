@@ -1,4 +1,4 @@
-### \###[点击查看《Markdown 语法》](http://wow.kuapp.com/markdown/)
+### \###[点击查看《Markdown 语法》](http://kuapp.com/Markdown-Syntax-CN/)
 
 ---
 简介：
@@ -14,11 +14,11 @@
   [src1]: http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
   [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
   [GitHub]: https://github.com/riku/Markdown-Syntax-CN/
-  [DigitalOcean.com VPS]:https://www.digitalocean.com/?refcode=824a4f4aea1a
+  [Linode VPS]:https://www.linode.com/lp/refer/?r=8f172925d426d78cd6f6119de00b34f209a66abd
 
 ### 链接
 
-项目主页：<http://wow.kuapp.com/markdown/>
+项目主页：<http://kuapp.com/Markdown-Syntax-CN/>
 
 繁体中文版主页：<http://markdown.tw/>
 
