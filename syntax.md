@@ -1,4 +1,4 @@
-<< [访问 Wow!Ubuntu](http://wowubuntu.com)
+<< [访问 主页](/)
 
 **NOTE:** This is Simplelified  Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to [Markdown: Syntax][eng-doc].
 
@@ -8,12 +8,10 @@
 
 **注：** 本项目托管于 [GitHub][]上，请通过"派生"和"合并请求"来帮忙改进本项目。
 
-  [src1]: http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md
   [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
   [t]: http://twitter.com/riku
   [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
   [Github]: https://github.com/riku/Markdown-Syntax-CN
-  [GitCafe]: http://gitcafe.com/riku/Markdown-Syntax-CN/
 
 Markdown 语法说明 (简体中文版) / ([点击查看快速入门](./basic.html))
 ================
