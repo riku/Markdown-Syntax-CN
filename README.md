@@ -1,6 +1,6 @@
 ![Markdown](/Markdown-mark.svg "Markdown Logo")
 
-### \###[点击查看《Markdown 语法》](https://markdown-syntax-cn.neocities.org/)
+### \###[点击查看《Markdown 语法》](http://markdown.kuapp.com/)
 
 ---
 简介：
