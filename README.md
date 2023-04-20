@@ -25,6 +25,4 @@
 
 ### 附注
 
-By @riku - [twitter.com/riku](http://twitter.com/riku)
-
-[Linode VPS](https://www.linode.com/lp/refer/?r=8f172925d426d78cd6f6119de00b34f209a66abd)
+By @riku - [twitter.com/riku](http://twitter.com/riku)  / 获取 [Linode VPS](https://www.linode.com/lp/refer/?r=8f172925d426d78cd6f6119de00b34f209a66abd)
