@@ -1,4 +1,4 @@
-<< [访问 主页](/)
+<< [访问 Github 项目主页](https://github.com/riku/Markdown-Syntax-CN)
 
 ![Markdown](/Markdown-mark.svg "Markdown Logo")
 
