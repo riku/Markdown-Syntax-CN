@@ -742,7 +742,7 @@ Mac 平台
 
 在线编辑器
 
-* [Markable.in](http://markable.in/)
+* [Coddy Markdown Editor](https://coddy.tech/tools/markdown-editor)
 * [Dillinger.io](http://dillinger.io/)
 
 浏览器插件
